@@ -9,25 +9,26 @@ function equation2(a,b,c){
     const delta = b*b - 4 * a * c;
     
     if( delta == 0 ){
-        //     document.write("Phuong trinh co nghiem kep:",x);
 
         x = -b / ( 2 * a );
+
+        console.log("Phuong trinh co nghiem kep: x =", x);
 
     }
 
     if( delta < 0 ){
-        // document.write("Phuong trinh vo nghiem");
+        console.log("Phuong trinh vo nghiem");
     }
 
     let x1 = 0 ;
     let x2 = 0;
 
     if( delta > 0 ){
-        // document.write("Phuong trinh co 2 nghiem rieng biet");
 
         x1 = ( -b + Math.sqrt( delta ) ) / ( 2 * a);
         x2 = ( -b - Math.sqrt( delta ) ) / ( 2 * a);
 
+        console.log("Phuong trinh co 2 nghiem rieng biet: x1 = ", x1, "x2 = ", x2 );
     }
 
     return x, x1 ,x2;
