@@ -1,3 +1,5 @@
+	// 1.4: Giải phương trình bậc 2
+
 function equation2(a,b,c){
 
     const x = 0;
