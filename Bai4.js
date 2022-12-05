@@ -9,12 +9,12 @@ function equation2(a,b,c){
         throw new Error(" Nunber cannot be NaN");
     }else{
 
-        if( a == 0 ){
+        if( a === 0 ){
             x = -c/b;
             console.log( "Nghiem cua phuong trinh :", x );
         }else
 
-        if( b == 0 ){
+        if( b === 0 ){
             x = Math.sqrt(-c / a);
         }
 
@@ -22,7 +22,7 @@ function equation2(a,b,c){
 
             const delta = b*b - 4 * a * c;
 
-            if( delta == 0 ){
+            if( delta === 0 ){
 
                 x = -b / ( 2 * a );
 
@@ -47,6 +47,6 @@ function equation2(a,b,c){
     }
 }
 
-const result = equation2(1,2,1);
+const result = equation2("1",2,1);
 
 console.log(result);
