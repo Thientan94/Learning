@@ -1,3 +1,5 @@
+// 1.1:Tính tổng nguyên: S = 1 + 1/2 + 1/3 + 1/4 +… 1/n 
+
 function Sum( n ){
 
     if( n == 0 ){
