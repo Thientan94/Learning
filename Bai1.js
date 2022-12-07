@@ -1,3 +1,6 @@
+// //1.2: Nhập vào số nguyên dương n
+// – Tính tổng s(n) = 1 + 2 + 3 + 4 + … + n Không dùng For
+
 function Sum( n ){
 
     if (n < 0) {
