@@ -3,19 +3,12 @@
 
 const arr = [17, 12, 15, 37, 21, 63, 191, 777 , 77];
 
-function filter7() {
-
-    const result = [];
-
-    for ( const number of arr ) {
-
-        if( number % 7 == 0 || number % 10 == 7){
-            result.push( number );
-        }
-
+function filter7(number) {
+    if(number % 7 === 0 || number % 10 === 7 ){
+        return true;
     }
+    return false
 
-    return result;
 }
 
-console.log(filter7());
+console.log(arr.filter(filter7));
